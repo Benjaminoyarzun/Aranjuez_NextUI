@@ -1,10 +1,12 @@
 import React from "react";
-import {Card, CardBody, Image, Button, Progress} from "@nextui-org/react";
+import {Card, CardBody, Image, CardHeader, CardFooter} from "@nextui-org/react";
+import { Reservasection } from './reservasection';
 
 export default function App() {
   const [liked, setLiked] = React.useState(false);
 
   return (
+    <>
     <Card
       isBlurred
       className="border-none bg-background/60 dark:bg-default-100/50"
@@ -35,6 +37,53 @@ export default function App() {
           </div>
         </div>
       </CardBody>
+    
     </Card>
+    <div className="flex flex-row gap-6 justify-center home-items">
+      <Card className="py-4 ">
+        <CardBody className="overflow-visible py-2 justify-center">
+          <Image
+            alt="Card background"
+            className="object-cover rounded-xl"
+            src="https://www.hotelaranjuez.com.ar/cyber-gratis-hotel-aranjuez.jpg"
+            width={270}
+          />
+        </CardBody>
+        <CardFooter className="pb-0 pt-2 px-4 flex-col items-start ">
+          <h3 className="font-bold text-large">Cyber ¡gratis!</h3>
+          <p className="text-tiny font-bold ">Tenemos habilitado un cyber con cinco PCs completas para que navegues gratis por Internet. Además contamos con WI-FI en todo el hotel.</p>
+        </CardFooter>
+      </Card>
+      <Card className="py-4">
+        <CardBody className="overflow-visible py-2">
+          <Image
+            alt="Card background"
+            className="object-cover rounded-xl "
+            src="https://www.hotelaranjuez.com.ar/piscina-descubierta-hotel-aranjuez.jpg"
+            width={270}
+          />
+        </CardBody>
+        <CardFooter className="pb-0 pt-2 px-4 flex-col items-start">
+          <h3 className="font-bold text-large">Piscina descubierta</h3>
+          <p className="text-tiny font-bold">En el verano podrá deleitarse con tardes de sol a pleno en nuestra piscina y solarium con reposeras y sillas y dejar que los más chicos se diviertan en nuestros juegos infantiles.</p>
+        </CardFooter>
+      </Card>
+      <Card className="py-4">
+        <CardBody className="overflow-visible py-2">
+          <Image
+            alt="Card background"
+            className="object-cover rounded-xl"
+            src="https://www.hotelaranjuez.com.ar/piscina-climatizada-hotel-carlos-paz.jpg"
+            width={270}
+          />
+        </CardBody>
+        <CardFooter className="pb-0 pt-2 px-4 flex-col items-start">
+          <h3 className="font-bold text-large">Piscina climatizada cubierta</h3>
+          <p className="text-tiny font-bold">Acabamos de inaugurar nuestra nueva piscina climatizada cubierta de 6x3 mts (con temperatura de 32ºC) con hidrojet disponible todo el año.</p>
+        </CardFooter>
+      </Card>
+      </div>
+      <Reservasection/>
+    </>
   );
 }

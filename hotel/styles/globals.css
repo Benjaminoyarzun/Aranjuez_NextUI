@@ -16,3 +16,11 @@
     color: rgb(139, 139, 139);
 }
 
+.reservar-btn{
+    color: white;
+    margin: 0px 15px;
+}
+
+.bg-content1 {
+    background-color: transparent;
+}

@@ -7,8 +7,6 @@ import HomePage from "@/components/Home";
 export default function IndexPage() {
 	return (
 		<DefaultLayout>
-			<h1 className={title()}>Hotel Aranjuez</h1>
-			<p className={subtitle()}>Esta es la pagina de inicio del hotel</p>
 			<HomePage/>
 		</DefaultLayout>
 	);
