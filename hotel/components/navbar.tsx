@@ -63,7 +63,6 @@ export const Navbar = () => {
 					<Link className={link()} href="/Resto">Restaurante</Link>
 					<Link className={link()} href="/Ubi">Ubicacion</Link>
 					<Link className={link()} href="/Vids">Videos</Link>
-					<Link className={link()} href="/">Amigos</Link>
 					<Link className={link()} href="/Booking">Reservas</Link>
 					
 				</div>

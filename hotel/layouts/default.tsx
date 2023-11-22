@@ -1,6 +1,8 @@
 import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import { Head } from "./head";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export default function DefaultLayout({
 	children,
@@ -14,16 +16,21 @@ export default function DefaultLayout({
 			<main className="container mx-auto max-w-7xl px-6 flex-grow">
 				{children}
 			</main>
-			<footer className="w-full flex items-center justify-center py-3">
-				<Link
-					isExternal
-					className="flex items-center gap-1 text-current"
-					href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-					title="nextui.org homepage"
-				>
-					<span className="text-default-600">Powered by</span>
-					<p className="text-primary">NextUI</p>
-				</Link>
+			<footer className="flex flex-row">
+				<div className="footer-content">
+					<p>Dirección: </p>
+					<div className="phone-icons">
+					<span>La Pampa 69 // Villa Carlos Paz</span>
+					</div>
+				</div>
+				<div className="footer-content2">
+					<p>Contáctanos:</p>
+					<div className="phone-icons">
+					
+					<p>+123456789</p>
+					</div>
+				</div>
+
 			</footer>
 		</div>
 	);
